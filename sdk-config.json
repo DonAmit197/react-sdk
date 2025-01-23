@@ -10,7 +10,9 @@
     "mashupClientId": "25795373220702300272",
     "mashupUserIdentifier": "customer@mediaco",
     "mashupClient_comment3": "Note: mashupPassword requires Base64 encoding",
-    "mashupPassword": "",
+    "mashupPassword_comment2": "Let's suppose you opened with the operator, here I opened with the customer@mediaco, so I have to provide the password of the customer@mediaco",
+    "mashupPassword_comment3": "Password for customer@mediaco is Rules@12345678, so I have to encode this password in Base64",
+    "mashupPassword": "UnVsZXNAMTIzNDU2Nzg=",
 
     "portalClientId_comment": "Client ID from the OAuth 2.0 Client Registration record used for portal use case",
     "portalClientId": "25795373220702300272"
@@ -18,10 +20,10 @@
 
   "serverConfig": {
     "infinityRestServerUrl_comment": "Full path to Infinity REST server",
-    "infinityRestServerUrl": "https://localhost:1080/prweb",
+    "infinityRestServerUrl": "https://njlfz9ot.pegace.net/prweb",
 
     "appAlias_comment": "appAlias of the application which operators will be accessing (e.g., MediaCo)",
-    "appAlias": "",
+    "appAlias": "MediaCo",
 
     "sdkContentServerUrl_comment": "If specified, the given URL will be used. If left blank, window.location.origin will be used.",
     "sdkContentServerUrl": "",
@@ -42,24 +44,26 @@
       "rulesetVersion": "01-01-01",
       "sourceOfComponents": "Server",
       "devBuild": false,
-      "clientId": "10095186356008396159",
+      "clientId_comment": "10095186356008396159",
+      "clientId": "25795373220702300272",
       "clientSecret_comment": "Needed only when using 'passwordCreds' or 'clientCreds' grantType",
       "clientSecret": "",
       "grantType_comment": "Preferred is 'authCode' as it works for public registrations (no clientSecret)",
-      "grantType": "authCode",
-      "redirectUri": "https://localhost:4010/",
+      "grantType": "passwordCreds",
+      "redirectUri": "https://localhost:3502/",
       "cert_and_key_comment": "Path to SSL certificate file and SSL key file to use when starting local HTTPS server",
       "cert_and_key_comment2": "Needed only when using 'authCode' grantType and redirectUri begins with 'https://localhost'",
       "cert": "./keys/sdk-r.crt",
       "key": "./keys/sdk-r.key",
       "user_and_password_comment": "Useful primarily when using 'passwordCreds' grantType",
       "user": "",
+
       "password": ""
     },
 
     "componentDefaults": {
-      "organization": "YourOrg",
-      "library": "YourComponentLib",
+      "organization": "Areteans",
+      "library": "AreteansReactSDK",
       "version": "0.0.1",
       "type": "",
       "subtype": "",

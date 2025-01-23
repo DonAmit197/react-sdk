@@ -131,7 +131,8 @@ export default function ShoppingOptionCard(props) {
       <div className={classes.swatchBody}>
         <div className={classes.swatchBanner}>{banner}</div>
         <ul>
-          <li>{channelsFull} channels plus FREE HD</li>
+          <li>{channelsFull} channels plus FREE HD </li>
+          <li>Test another itenary</li>
           <li>Thousands of On Demand choices</li>
           <li>Watch on the {PCore.getEnvironmentInfo().getApplicationLabel()} App</li>
           <li>Up to {internetSpeed} Internet Speeds</li>
